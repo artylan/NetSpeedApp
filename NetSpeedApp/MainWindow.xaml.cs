@@ -3,19 +3,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace NetSpeedApp
 {
@@ -47,7 +37,8 @@ namespace NetSpeedApp
 
             while (mainWindow.IsAlive())
             {
-                mainWindow.Dispatcher.Invoke((Action)(() => {
+                mainWindow.Dispatcher.Invoke((Action)(() =>
+                {
                     alive = mainWindow.IsAlive();
                     if (alive)
                     {
