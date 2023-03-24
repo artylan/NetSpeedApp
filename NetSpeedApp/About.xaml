@@ -1,0 +1,28 @@
+﻿<Window x:Class="NetSpeedApp.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetSpeedApp"
+        mc:Ignorable="d"
+        Title="About" Height="140" Width="380">
+    <Grid Margin="0,0,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <TextBlock TextWrapping="Wrap" Margin="5,0,0,0" Grid.Row="2" Grid.Column="1" Height="35" VerticalAlignment="Center">
+            <Hyperlink NavigateUri="https://artur-wystub.de/blog/netspeedapp/" RequestNavigate="HandleLinkClick">
+                https://artur-wystub.de/blog/netspeedapp/
+            </Hyperlink>
+        </TextBlock>
+        <Image Margin="10,10,10,10" Source="/icons8-online-64-green.png" Grid.RowSpan="3"/>
+        <Label Content="Copyleft 2023 by Artur Wystub" Grid.Row="1" Grid.Column="1" Height="25" VerticalAlignment="Center"/>
+        <Label Content="NetSpeedApp 1.0.1" FontSize="24" FontWeight="Bold" Grid.Column="1" Grid.Row="0"/>
+    </Grid>
+</Window>
