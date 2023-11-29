@@ -23,6 +23,6 @@
         </TextBlock>
         <Image Margin="10,10,10,10" Source="/icons8-online-64-green.png" Grid.RowSpan="3"/>
         <Label Content="Copyleft 2023 by Artur Wystub" Grid.Row="1" Grid.Column="1" Height="25" VerticalAlignment="Center"/>
-        <Label Content="NetSpeedApp 1.0.1" FontSize="24" FontWeight="Bold" Grid.Column="1" Grid.Row="0"/>
+        <Label Content="NetSpeedApp 1.0.2" FontSize="24" FontWeight="Bold" Grid.Column="1" Grid.Row="0"/>
     </Grid>
 </Window>

@@ -176,12 +176,12 @@ namespace NetSpeedApp
             object l = appKey.GetValue("Left");
             if (l != null)
             {
-                this.Left = int.Parse((string)l);
+                this.Left = double.Parse((string)l);
             }
             object t = appKey.GetValue("Top");
             if (t != null)
             {
-                this.Top = int.Parse((string)t);
+                this.Top = double.Parse((string)t);
             }
         }
         private void saveRegistry()
@@ -215,7 +215,7 @@ namespace NetSpeedApp
         }
     }
 
-    // All that folows is taken and adapted from https://www.codeguru.com/csharp/manipulating-the-system-menu-using-c/
+    // All that follows is taken and adapted from https://www.codeguru.com/csharp/manipulating-the-system-menu-using-c/
     public class NoSystemMenuException : System.Exception
     {
     }
